@@ -12,12 +12,12 @@
     </script>
             <script language="javascript">
                 function MouseRollover(images){
-                    myimage.src = "red.jpeg";
+                    images.src = "red.jpeg"
                 }
                 function MouseOut(images){
-                    myimage.src = "home.jpg";
+                    images.src = "home.jpg"
                 }
-          </script>
+            </script>
     <style>
         p
         {
@@ -29,8 +29,11 @@
     </style>
 </head>
 <body onload="trigger();">
-    <p id="hover">">Welcome!!</p>
-      onmouseover=Mouserollover("this)
-      onmouseout=Mouseout("this")/>
+    <p id="hover">Welcome!!</p>
+    <div>
+        <img src="welcome.jpg"
+               onmouseover=Mouserollover("this)
+               onmouseout=Mouseout("this") />
+    </div>
 </body>
 </html>
